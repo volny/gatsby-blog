@@ -25,9 +25,7 @@ export default class Counter extends Component {
         </button>
       </div>
       <div style={{ padding: '1rem 0', textAlign: 'center' }}>
-        <Link to="/">Home</Link>
-        <span> / </span>
-        <Link to="/page-2/">Page 2</Link>
+        <Link to="/">back home</Link>
       </div>
     </div>
 }
