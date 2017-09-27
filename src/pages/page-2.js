@@ -1,8 +1,10 @@
 import React from "react"
 import Link from 'gatsby-link'
 
+import Container from "../components/container"
+
 export default () =>
-  <div style={{ margin: '3rem auto', maxWidth: 650, padding: '0 1rem' }}>
+  <Container>
     <h1>Richard Hamming on Luck</h1>
     <div>
       <p>
@@ -27,4 +29,4 @@ export default () =>
       <p>Hello world from my second Gatsby page</p>
       <Link to="/">back home</Link>
     </div>
-  </div>
+  </Container>
