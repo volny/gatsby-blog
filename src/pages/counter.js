@@ -1,31 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-class Counter extends React.Component {
-  constructor () {
-    super()
-    this.state = { count: 0 }
+export default class Counter extends Component {
+  state = {
+    count: 0
   }
 
-  render () {
-    return (
-      <div style={{ right: '50%', bottom: '50%', transform: 'translate(50%,50%)', position: 'absolute' }}>
-        <h1>Counter</h1>
-        <p>current count: {this.state.count}</p>
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+  handleClick = (change) => {
+    this.setState(() => ({
+      count: this.state.count + change
+    }))
+  }
+
+  render = () =>
+    <div style={{ right: '50%', bottom: '50%', transform: 'translate(50%,50%)', position: 'absolute' }}>
+      <h1>Counter</h1>
+      <p style={{ fontSize: '500%', color: 'tomato', textAlign: 'center', padding: '1rem' }}>{this.state.count}</p>
+      <div style={{ textAlign: 'center', paddingTop: '0.8rem' }}>
+        <button style={{ marginRight: '3px' }} onClick={() => this.handleClick(1)}>
           plus
         </button>
-        <button onClick={() => this.setState({ count: this.state.count - 1 })}>
+        <button style={{ marginLeft: '3px' }} onClick={() => this.handleClick(-1)}>
           minus
         </button>
-        <div style={{ padding: '1rem 0' }}>
-          <Link to="/">Home</Link>
-          <span> / </span>
-          <Link to="/page-2/">Page 2</Link>
-        </div>
       </div>
-    )
-  }
+      <div style={{ padding: '1rem 0', textAlign: 'center' }}>
+        <Link to="/">Home</Link>
+        <span> / </span>
+        <Link to="/page-2/">Page 2</Link>
+      </div>
+    </div>
 }
-
-export default Counter
