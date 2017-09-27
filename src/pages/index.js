@@ -13,4 +13,6 @@ export default () =>
     <Link to="/counter/">Counter</Link>
     <span> / </span>
     <Link to="/page-2/"> Page 2 </Link>
+    <span> / </span>
+    <Link to="/about-css-modules/">About CSS Modules</Link>
   </Container>
