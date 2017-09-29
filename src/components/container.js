@@ -1,18 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from "styled-components"
+
+const HeaderLink = styled(Link)`
+  background-Image: none;
+  &:hover {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px);
+  }
+`
 
 const ListLink = ({ to, children }) =>
   <li style={{
     display: `inline-block`,
     marginRight: `1rem`,
   }}>
-    <Link
-      style={{
-        backgroundImage: `none`
-      }}
+    <HeaderLink
       to={to}>
       {children}
-    </Link>
+    </HeaderLink>
   </li>
 
   export default ({ children }) =>
@@ -32,7 +37,7 @@ const ListLink = ({ to, children }) =>
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <ListLink to="/">Home</ListLink>
-        <ListLink to="/about-css-modules/">About</ListLink>
+        <ListLink to="/about/">About</ListLink>
         <ListLink to="/counter/">Counter</ListLink>
       </ul>
     </header>

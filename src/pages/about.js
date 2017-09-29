@@ -47,13 +47,17 @@ const User = props =>
 
 export default () =>
   <Container>
-    <h1>About Styled Components</h1>
-    <p>Styled Components is cool</p>
+    <h1>Who we are</h1>
+    <p>
+      We are this amazing company in the middle of nowhere. You'd totally like us if you'd know us personally.
+    </p>
+    <h2>Meet our Team</h2>
     <User
       username="Jane Doe"
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
       excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
+
     <User
       username="Bob Smith"
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"

@@ -11,11 +11,5 @@ export default () =>
     <p>Marvel at <Link to="/counter/">Counter</Link></p>
     <img src="http://lorempixel.com/400/200/" alt="" />
     <p>
-      <h3>Styling with:</h3>
-      <ul>
-        <li><Link to="about-css-modules">CSS Modules</Link></li>
-        <li><Link to="about-glamour">Glamour</Link></li>
-        <li><Link to="about-styled-components">Styled Components</Link></li>
-      </ul>
     </p>
   </Container>
