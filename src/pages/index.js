@@ -4,49 +4,32 @@ import Link from 'gatsby-link'
 export default ({ data }) => {
   console.log(data)
   return (
-      <div>
-        <h1>Files</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>relativePath</th>
-              <th>prettySize</th>
-              <th>extension</th>
-              <th>birthTime</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.allFile.edges.map(({ node }) =>
-              <tr>
-                <td>
-                  {node.relativePath}
-                </td>
-                <td>
-                  {node.prettySize}
-                </td>
-                <td>
-                  {node.extension}
-                </td>
-                <td>
-                  {node.birthTime}
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
-    )
-  }
+    <div>
+      {data.allMarkdownRemark.edges.map(({ node }) =>
+        <div key={node.id}>
+          <h4 style={{color: '#444444', marginBottom: '5px'}}>{node.frontmatter.date}</h4>
+          <h2 style={{marginTop: 0}}>{node.frontmatter.title}{" "}</h2>
+          <p>
+            {node.excerpt}
+          </p>
+        </div>
+      )}
+    </div>
+  )
+}
 
 export const query = graphql`
-  query MyFilesQuery {
-    allFile {
+  query IndexQuery {
+    allMarkdownRemark {
+      totalCount
       edges {
         node {
-          relativePath
-          prettySize
-          extension
-          birthTime(fromNow: true)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+          excerpt
         }
       }
     }
