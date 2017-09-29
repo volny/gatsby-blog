@@ -1,5 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from "styled-components"
+
+const PostTitle = styled.h2`
+  font-size: 2em;
+  margin-top: 0;
+`
 
 export default ({ data }) => {
   console.log(data)
@@ -9,7 +15,7 @@ export default ({ data }) => {
         <div key={node.id}>
           <Link to={node.fields.slug}>
             <h4 style={{color: '#444444', marginBottom: '5px'}}>{node.frontmatter.date}</h4>
-            <h2 style={{marginTop: 0}}>{node.frontmatter.title}{" "}</h2>
+            <PostTitle>{node.frontmatter.title}</PostTitle>
             <p style={{color: 'hsla(0,0%,0%,0.8)'}}>
               {node.excerpt}
             </p>
