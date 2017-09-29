@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const PostTitle = styled.h2`
   font-size: 2em;
-  margin-top: 0;
+  margin: 0;
 `
 
 export default ({ data }) => {
@@ -12,9 +12,14 @@ export default ({ data }) => {
   return (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) =>
-        <div key={node.id}>
+        <div key={node.id} style={{padding: '10px 0'}}>
           <Link to={node.fields.slug}>
-            <h4 style={{color: '#444444', marginBottom: '5px'}}>{node.frontmatter.date}</h4>
+            <p style={{
+              fontSize: '1rem',
+              color: '#444444',
+              marginBottom: 0,
+            }}>{node.frontmatter.date}
+          </p>
             <PostTitle>{node.frontmatter.title}</PostTitle>
             <p style={{color: 'hsla(0,0%,0%,0.8)'}}>
               {node.excerpt}

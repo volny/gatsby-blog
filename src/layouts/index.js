@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from "styled-components"
 
-// require('prismjs/themes/prism-solarizedlight.css')
 import 'prismjs/themes/prism-solarizedlight.css'
 
 const HeaderLink = styled(Link)`
@@ -26,8 +25,8 @@ const ListLink = ({ to, children }) =>
   export default ({ children, data }) =>
   <div style={{
     margin: `0 auto`,
-    maxWidth: 650,
-    padding: `1.25rem 1rem`
+    maxWidth: 750,
+    padding: `2rem 1rem`
   }}>
     <header style={{
       marginBottom: `1.5rem`
