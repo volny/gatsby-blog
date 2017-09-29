@@ -1,67 +1,60 @@
 ---
 title: Some more code
 date: "2017-09-29"
+excerpt: |
+  I have seen an example online that use language-jsx nicely. I have also found this PR #479. However, I don't have any coloration for my jsx. Is jsx supposed to work out of the box? On the list on the site there is also json, but json work only with js.
+
 ---
-But wait... there's more!
 
-  - *The best test setup:* Automatically guarantee code quality and non-breaking
-    changes. (Seen a react app with 99% test coverage before?)
-  - *Native web app:* Your app's new home? The home screen of your users' phones.
-  - *The fastest fonts:* Say goodbye to vacant text.
-  - *Stay fast*: Profile your app's performance from the comfort of your command
-    line!
-  - *Catch problems:* AppVeyor and TravisCI setups included by default, so your
-    tests get run automatically on Windows and Unix.
+I have seen an example online that use <code>language-jsx</code> nicely. I have also found this PR <a href="https://github.com/PrismJS/prism/pull/479" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="54694395" data-permission-text="Issue title is private" data-url="https://github.com/PrismJS/prism/issues/479">#479</a>. However, I don't have any coloration for my jsx. Is jsx supposed to work out of the box? On the list on the site there is also <code>json</code>, but json work only with <code>js</code>.
 
-```javascript
-function sleep(duration) {
-  return new Promise(function(resolve, reject) {
-    setTimeout(()=> { resolve(0) }, duration);
-  })
-}
+> But wait... there's more!
 
-async function delayedMessage(message, delay) {
-  let remainingTime = await sleep(delay)
-  console.log(message, `(remaining time: ${remainingTime})`)
-}
+- *The best test setup:* Automatically guarantee code quality and non-breaking
+  changes. (Seen a react app with 99% test coverage before?)
+- *Native web app:* Your app's new home? The home screen of your users' phones.
+- *The fastest fonts:* Say goodbye to vacant text.
+- *Stay fast*: Profile your app's performance from the comfort of your command
+  line!
+- *Catch problems:* AppVeyor and TravisCI setups included by default, so your
+  tests get run automatically on Windows and Unix.
 
-delayedMessage("World", 400).then(()=>{ console.log('done') })
-delayedMessage("Hello", 200)
-```
+```jsx
+// can use language-jsx out of the box 👍
 
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- The first thing in any HTML file should be the charset -->
-    <meta charset="utf-8">
+const ListLink = ({ to, children }) =>
+  <li style={{
+    display: `inline-block`,
+    marginRight: `1rem`,
+  }}>
+    <HeaderLink
+      to={to}>
+      {children}
+    </HeaderLink>
+  </li>
 
-    <!-- Make the page mobile compatible -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Allow installing the app to the homescreen -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- iOS home screen icons -->
-    <meta name="apple-mobile-web-app-title" content="react boilerplate">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180x180.png">
-
-    <link rel="icon" href="/favicon.ico" />
-    <title>React.js Boilerplate</title>
-  </head>
-  <body>
-    <!-- Display a message if JS has been disabled on the browser. -->
-    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
-
-    <!-- The app hooks into this div -->
-    <div id="app"></div>
-    <!-- Open Sans Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out the webpack config files in internals/webpack for details) -->
-  </body>
-</html>
+  export default ({ children, data }) =>
+  <div style={{
+    margin: `0 auto`,
+    maxWidth: 750,
+    padding: `2rem 1rem`
+  }}>
+    <header style={{
+      marginBottom: `1.5rem`
+    }}>
+      <Link to="/" style={{
+        textShadow: `none`,
+        backgroundImage: `none`,
+      }}>
+        <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
+      </Link>
+      <ul style={{ listStyle: `none`, float: `right` }}>
+        <ListLink to="/">Home</ListLink>
+        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/files/">Files</ListLink>
+        <ListLink to="/counter/">Counter</ListLink>
+      </ul>
+    </header>
+    {children()}
+  </div>
 ```

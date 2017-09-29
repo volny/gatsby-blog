@@ -24,7 +24,7 @@ export default ({ data }) => {
             <PostDate>{node.frontmatter.date}</PostDate>
             <PostTitle>{node.frontmatter.title}</PostTitle>
             <p style={{color: 'hsla(0,0%,0%,0.8)'}}>
-              {node.excerpt}
+              {node.frontmatter.excerpt}
             </p>
           </Link>
         </div>
@@ -42,11 +42,11 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            excerpt
           }
           fields {
             slug
           }
-          excerpt
         }
       }
     }

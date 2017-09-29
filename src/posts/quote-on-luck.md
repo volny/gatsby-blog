@@ -1,6 +1,7 @@
 ---
 title: Richard Hammings on Luck
-date: "2015-08-21"
+date: "2017-09-21"
+excerpt: From Richard Hamming’s classic and must-read talk, “ You and Your Research ”.
 ---
 
 From Richard Hamming’s classic and must-read talk, “ [You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html) ”.
