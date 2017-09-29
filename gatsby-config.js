@@ -1,12 +1,14 @@
 module.exports = {
+  siteMetadata: {
+    title: `Blog Title`,
+  },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: `src/utils/typography`,
       },
     },
-    // `gatsby-plugin-glamor`,
-    `gatsby-plugin-styled-components`,
   ],
 }

@@ -20,7 +20,7 @@ const ListLink = ({ to, children }) =>
     </HeaderLink>
   </li>
 
-  export default ({ children }) =>
+  export default ({ children, data }) =>
   <div style={{
     margin: `0 auto`,
     maxWidth: 650,
@@ -33,7 +33,7 @@ const ListLink = ({ to, children }) =>
         textShadow: `none`,
         backgroundImage: `none`,
       }}>
-        <h3 style={{ display: `inline` }}>Blog</h3>
+        <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <ListLink to="/">Home</ListLink>
@@ -41,5 +41,15 @@ const ListLink = ({ to, children }) =>
         <ListLink to="/counter/">Counter</ListLink>
       </ul>
     </header>
-    {children}
+    {children()}
   </div>
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

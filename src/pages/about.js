@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import Container from "../components/container"
-
 const UserWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -46,7 +44,7 @@ const User = props =>
   </UserWrapper>
 
 export default () =>
-  <Container>
+  <div>
     <h1>Who we are</h1>
     <p>
       We are this amazing company in the middle of nowhere. You'd totally like us if you'd know us personally.
@@ -63,4 +61,4 @@ export default () =>
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
       excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
-  </Container>
+  </div>
