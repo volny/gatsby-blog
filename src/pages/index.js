@@ -7,11 +7,13 @@ export default ({ data }) => {
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div key={node.id}>
-          <h4 style={{color: '#444444', marginBottom: '5px'}}>{node.frontmatter.date}</h4>
-          <h2 style={{marginTop: 0}}>{node.frontmatter.title}{" "}</h2>
-          <p>
-            {node.excerpt}
-          </p>
+          <Link to={node.fields.slug}>
+            <h4 style={{color: '#444444', marginBottom: '5px'}}>{node.frontmatter.date}</h4>
+            <h2 style={{marginTop: 0}}>{node.frontmatter.title}{" "}</h2>
+            <p style={{color: 'hsla(0,0%,0%,0.8)'}}>
+              {node.excerpt}
+            </p>
+          </Link>
         </div>
       )}
     </div>
@@ -27,6 +29,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
