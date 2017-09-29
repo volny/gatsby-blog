@@ -1,5 +1,4 @@
 import React from "react"
-import Link from 'gatsby-link'
 
 import Container from "../components/container"
 
@@ -46,5 +45,4 @@ export default () =>
       excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
 
-    <Link to="/">back home</Link>
   </Container>

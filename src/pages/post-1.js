@@ -27,6 +27,5 @@ export default () =>
     <p>Posted April 09, 2011</p>
     <div>
       <p>Hello world from my second Gatsby page</p>
-      <Link to="/">back home</Link>
     </div>
   </Container>

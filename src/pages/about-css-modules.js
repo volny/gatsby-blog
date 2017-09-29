@@ -1,5 +1,4 @@
 import React from "react"
-import Link from 'gatsby-link'
 
 import Container from "../components/container"
 import styles from "./about-css-modules.module.css"
@@ -35,5 +34,4 @@ export default () =>
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
       excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
-    <Link to="/">back home</Link>
   </Container>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
+import Container from "../components/container"
+
 export default class Counter extends Component {
   state = {
     count: 0
@@ -13,6 +15,7 @@ export default class Counter extends Component {
   }
 
   render = () =>
+  <Container>
     <div style={{ right: '50%', bottom: '50%', transform: 'translate(50%,50%)', position: 'absolute' }}>
       <h1>Counter</h1>
       <p style={{ fontSize: '500%', color: 'tomato', textAlign: 'center', padding: '1rem' }}>{this.state.count}</p>
@@ -24,8 +27,6 @@ export default class Counter extends Component {
           minus
         </button>
       </div>
-      <div style={{ padding: '1rem 0', textAlign: 'center' }}>
-        <Link to="/">back home</Link>
-      </div>
     </div>
+  </Container>
 }
