@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from "styled-components"
 
+// require('prismjs/themes/prism-solarizedlight.css')
+import 'prismjs/themes/prism-solarizedlight.css'
+
 const HeaderLink = styled(Link)`
   background-Image: none;
   &:hover {

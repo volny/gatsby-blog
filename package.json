@@ -13,6 +13,7 @@
     "gatsby-plugin-glamor": "^1.6.7",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "1.7.0",
+    "gatsby-remark-prismjs": "^1.2.8",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-remark": "^1.7.15",
     "typography-theme-fairy-gates": "^0.15.11",
