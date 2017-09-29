@@ -1,6 +1,6 @@
 ---
 title: "Atom - the hackable text editor"
-date: "2017-08-10"
+date: "2017-09-10"
 ---
 
 ![Atom](https://cloud.githubusercontent.com/assets/72919/2874231/3af1db48-d3dd-11e3-98dc-6066f8bc766f.png)
