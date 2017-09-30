@@ -1,3 +1,32 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(150, 150, 150, 0.5);
+  padding: 0 15%;
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding: 0 5%;
+  }
+}
+
+footer .icon-link {
+  margin: auto;
+  background: none;
+}
+
+footer:hover {
+  background-color: rgba(150, 150, 150, 0.9);
+}
+
 a:hover svg .website-icon path {
   fill: #27ae60;
 }

@@ -12,28 +12,6 @@ const HeaderLink = styled(Link)`
   }
 `
 
-const Footer = styled.footer`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 80px;
-  background-color: rgba(150, 150, 150, 0.5);
-  padding: 0 15%;
-  @media (max-width: 700px) {
-    padding: 0 5%;
-  }
-`
-
-const FooterItem = styled.a`
-  margin: auto;
-  background: none;
-`
-
 const ListLink = ({ to, children }) =>
   <li style={{
     display: `inline-block`,
@@ -107,23 +85,23 @@ export default ({ children, data }) =>
     </ul>
   </header>
   {children()}
-  <Footer>
-    <FooterItem href="https://www.felixvolny.com" target="_blank">
+  <footer>
+    <a className="icon-link" href="https://www.felixvolny.com" target="_blank">
       <WebsiteIcon />
-    </FooterItem>
-    <FooterItem href="https://twitter.com/volnyco" target="_blank">
+    </a>
+    <a className="icon-link" href="https://twitter.com/volnyco" target="_blank">
       <TwitterIcon />
-    </FooterItem>
-    <FooterItem href="https://linkedin.com/felixvolny" target="_blank">
+    </a>
+    <a className="icon-link" href="https://linkedin.com/felixvolny" target="_blank">
       <LinkedinIcon />
-    </FooterItem>
-    <FooterItem href="https://githbub.com/volny" target="_blank">
+    </a>
+    <a className="icon-link" href="https://githbub.com/volny" target="_blank">
       <GithubIcon />
-    </FooterItem>
-    <FooterItem href="mailto:website@felixvolny.com">
+    </a>
+    <a className="icon-link" href="mailto:website@felixvolny.com">
       <EmailIcon />
-    </FooterItem>
-  </Footer>
+    </a>
+  </footer>
 </div>
 
 export const query = graphql`
