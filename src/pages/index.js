@@ -26,6 +26,10 @@ export default ({ data }) => {
               {node.frontmatter.excerpt}
             </p>
           </Link>
+          <hr style={{
+          margin: '-5px 80% 20px 5px',
+          height: '5px',
+          }}/>
         </div>
       )}
     </div>
