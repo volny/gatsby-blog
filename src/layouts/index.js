@@ -69,7 +69,8 @@ export default ({ children, data }) =>
   padding: `2rem 1rem`
 }}>
   <header style={{
-    marginBottom: `1.5rem`
+    marginBottom: `1.5rem`,
+    minHeight: '3rem',
   }}>
     <Link to="/" style={{
       textShadow: `none`,
@@ -80,8 +81,6 @@ export default ({ children, data }) =>
     <ul style={{ listStyle: `none`, float: `right` }}>
       <ListLink to="/">Home</ListLink>
       <ListLink to="/about/">About</ListLink>
-      <ListLink to="/files/">Files</ListLink>
-      <ListLink to="/counter/">Counter</ListLink>
     </ul>
   </header>
   {children()}

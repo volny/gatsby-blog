@@ -15,7 +15,6 @@ const PostDate = styled.p`
 `
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) =>
