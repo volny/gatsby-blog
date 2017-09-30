@@ -1,0 +1,19 @@
+a:hover svg .website-icon path {
+  fill: #27ae60;
+}
+
+a:hover svg .twitter-icon path {
+  fill: #1da1f2;
+}
+
+a:hover svg .linkedin-icon path {
+  fill: #0077B5;
+}
+
+a:hover svg .github-icon path {
+  fill: #24292e;
+}
+
+a:hover svg .email-icon * {
+  fill: #d35400;
+}
