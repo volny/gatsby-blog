@@ -3,8 +3,8 @@ import React from 'react'
 import { WebsiteIcon, TwitterIcon, LinkedinIcon, GithubIcon, EmailIcon } from './icons.js'
 import './footer.css'
 
-export default ({children}) => (
-  <footer>
+export default ({ height }) => (
+  <footer style={{height: `${height}px`}}>
     <a className="icon-link" href="https://www.felixvolny.com" target="_blank">
       <WebsiteIcon />
     </a>

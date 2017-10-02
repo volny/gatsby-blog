@@ -45,7 +45,7 @@ export default ({ children, data }) =>
       </ul>
     </header>
     <div style={{padding: `0 0 ${data.site.siteMetadata.footerHeight}px 0`}}>{children()}</div>
-    <Footer />
+    <Footer height={data.site.siteMetadata.footerHeight} />
   </div>
 
 export const query = graphql`
