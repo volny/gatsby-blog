@@ -44,7 +44,7 @@ export default ({ children, data }) =>
       <ListLink to="/about/">About</ListLink>
     </ul>
   </header>
-  {children()}
+  <div style={{padding: "0 0 80px 0"}}>{children()}</div>
   <Footer />
 </div>
 
