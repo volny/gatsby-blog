@@ -4,11 +4,29 @@ import styled from "styled-components"
 
 import '../styling/prism-theme.css'
 import Footer from '../components/Footer'
+import Logo from './logo.png'
 
 const HeaderLink = styled(Link)`
   background-Image: none;
   &:hover {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px);
+  }
+`
+
+const LogoImage = styled.img`
+  display: inline;
+  width: 100px;
+  @media (max-width: 750px) {
+    margin: 0 0 0 1rem;
+  }
+`
+
+const Navigation = styled.ul`
+  listStyle: none;
+  float: right;
+  padding: 30px 0 0 0;
+  @media (max-width: 750px) {
+    margin: 0 1rem 0 0;
   }
 `
 
@@ -37,12 +55,12 @@ export default ({ children, data }) =>
         textShadow: `none`,
         backgroundImage: `none`,
       }}>
-        <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
+        <LogoImage src={Logo} alt={data.site.siteMetadata.title} />
       </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
+      <Navigation>
         <ListLink to="/">Home</ListLink>
         <ListLink to="/about/">About</ListLink>
-      </ul>
+      </Navigation>
     </header>
     <div style={{padding: `0 0 ${data.site.siteMetadata.footerHeight}px 0`}}>{children()}</div>
     <Footer height={data.site.siteMetadata.footerHeight} />
