@@ -24,35 +24,36 @@ const ListLink = ({ to, children }) =>
   </li>
 
 export default ({ children, data }) =>
-<div style={{
-  margin: `0 auto`,
-  maxWidth: 750,
-  padding: `2rem 1rem`
-}}>
-  <header style={{
-    marginBottom: `1.5rem`,
-    minHeight: '3rem',
+  <div style={{
+    margin: `0 auto`,
+    maxWidth: 750,
+    padding: `2rem 1rem`
   }}>
-    <Link to="/" style={{
-      textShadow: `none`,
-      backgroundImage: `none`,
+    <header style={{
+      marginBottom: `1.5rem`,
+      minHeight: '3rem',
     }}>
-      <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
-    </Link>
-    <ul style={{ listStyle: `none`, float: `right` }}>
-      <ListLink to="/">Home</ListLink>
-      <ListLink to="/about/">About</ListLink>
-    </ul>
-  </header>
-  <div style={{padding: "0 0 80px 0"}}>{children()}</div>
-  <Footer />
-</div>
+      <Link to="/" style={{
+        textShadow: `none`,
+        backgroundImage: `none`,
+      }}>
+        <h3 style={{ display: `inline` }}>{data.site.siteMetadata.title}</h3>
+      </Link>
+      <ul style={{ listStyle: `none`, float: `right` }}>
+        <ListLink to="/">Home</ListLink>
+        <ListLink to="/about/">About</ListLink>
+      </ul>
+    </header>
+    <div style={{padding: `0 0 ${data.site.siteMetadata.footerHeight}px 0`}}>{children()}</div>
+    <Footer />
+  </div>
 
 export const query = graphql`
-  query LayoutQuery {
+  query IndexLayoutQuery {
     site {
       siteMetadata {
         title
+        footerHeight
       }
     }
   }

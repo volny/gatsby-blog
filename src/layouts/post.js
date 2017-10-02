@@ -16,7 +16,7 @@ const PostDate = styled.p`
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div style={{padding: '0 0 80px 0'}}>
+    <div>
       <div style={{padding: `8px 0 25px 0`}}>
         <PostDate>{post.frontmatter.date}</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
@@ -27,7 +27,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query PostLayoutQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
