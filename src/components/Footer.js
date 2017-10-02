@@ -11,10 +11,10 @@ export default ({ height }) => (
     <a className="icon-link" href="https://twitter.com/volnyco" target="_blank">
       <TwitterIcon />
     </a>
-    <a className="icon-link" href="https://linkedin.com/felixvolny" target="_blank">
+    <a className="icon-link" href="https://www.linkedin.com/in/felix-volny" target="_blank">
       <LinkedinIcon />
     </a>
-    <a className="icon-link" href="https://githbub.com/volny" target="_blank">
+    <a className="icon-link" href="https://github.com/volny" target="_blank">
       <GithubIcon />
     </a>
     <a className="icon-link" href="mailto:website@felixvolny.com">
