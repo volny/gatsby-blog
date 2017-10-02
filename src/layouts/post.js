@@ -27,7 +27,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query PostLayoutQuery($slug: String!) {
+  query PostLayoutQuery($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
