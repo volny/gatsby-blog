@@ -16,7 +16,7 @@ const PostDate = styled.p`
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div>
+    <div style={{padding: '0 0 80px 0'}}>
       <div style={{padding: `8px 0 25px 0`}}>
         <PostDate>{post.frontmatter.date}</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
