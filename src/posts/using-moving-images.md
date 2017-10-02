@@ -9,7 +9,7 @@ I have seen an example online that use <code>language-jsx</code> nicely. I have 
 
 ## gif
 
-![😭😭😭 - doesn't load from FS](images/example.gif)
+![a gif](images/example.gif)
 
 ## gif from www
 

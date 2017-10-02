@@ -3458,6 +3458,17 @@ gatsby-react-router-scroll@^1.0.1:
     scroll-behavior "^0.9.1"
     warning "^3.0.0"
 
+gatsby-remark-copy-linked-files@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-1.5.7.tgz#59817877cb2978a6a72df62f2353033f0f8a6e35"
+  dependencies:
+    babel-runtime "^6.26.0"
+    cheerio "^1.0.0-rc.2"
+    fs-extra "^4.0.1"
+    is-relative-url "^2.0.0"
+    lodash "^4.17.4"
+    unist-util-visit "^1.1.1"
+
 gatsby-remark-images@^1.5.13:
   version "1.5.13"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-1.5.13.tgz#7e383cea60aa624e8775256702eaa57c0ea55515"

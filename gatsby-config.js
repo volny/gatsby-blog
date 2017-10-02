@@ -34,6 +34,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          `gatsby-remark-copy-linked-files`,
         ]
       },
     },
