@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from "styled-components"
 
 import '../styling/prism-theme.css'
-import Footer from './Footer'
+import Footer from '../components/Footer'
 
 const HeaderLink = styled(Link)`
   background-Image: none;
