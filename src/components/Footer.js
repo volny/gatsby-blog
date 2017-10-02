@@ -5,19 +5,19 @@ import './footer.css'
 
 export default ({ height }) => (
   <footer style={{height: `${height}px`}}>
-    <a className="icon-link" href="https://www.felixvolny.com" target="_blank">
+    <a className="icon-link" href="https://www.example.com" target="_blank">
       <WebsiteIcon />
     </a>
-    <a className="icon-link" href="https://twitter.com/volnyco" target="_blank">
+    <a className="icon-link" href="https://twitter.com" target="_blank">
       <TwitterIcon />
     </a>
-    <a className="icon-link" href="https://www.linkedin.com/in/felix-volny" target="_blank">
+    <a className="icon-link" href="https://www.linkedin.com" target="_blank">
       <LinkedinIcon />
     </a>
-    <a className="icon-link" href="https://github.com/volny" target="_blank">
+    <a className="icon-link" href="https://github.com" target="_blank">
       <GithubIcon />
     </a>
-    <a className="icon-link" href="mailto:website@felixvolny.com">
+    <a className="icon-link" href="mailto:someguy@gmail.com">
       <EmailIcon />
     </a>
   </footer>
