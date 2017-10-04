@@ -1,64 +1,55 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-const UserWrapper = styled.div`
+import AvatarImage from './avatar.jpg'
+
+const Container = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 auto 12px auto;
-  &:last-child {
-    margin-bottom: 0;
+  @media (max-width: 750px) {
+    flex-direction: column;
   }
 `
 
 const Avatar = styled.img`
-  flex: 0 0 96px;
-  width: 96px;
-  height: 96px;
+  flex: 0 0 250px;
+  width: 250px;
+  height: 250px;
   margin: 0;
+  @media (max-width: 750px) {
+    align-self: flex-start;
+  }
 `
 
-const Description = styled.div`
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
-`
-
-const Username = styled.h2`
+const Name = styled.h2`
   margin: 0 0 12px 0;
   padding: 0;
 `
 
-const Excerpt = styled.p`margin: 0;`
-
-const User = props =>
-  <UserWrapper>
-    <Avatar src={props.avatar} alt="" />
-    <Description>
-      <Username>
-        {props.username}
-      </Username>
-      <Excerpt>
-        {props.excerpt}
-      </Excerpt>
-    </Description>
-  </UserWrapper>
+const Description = styled.div`
+  flex: 1;
+  padding: 0 0 0 2rem;
+  @media (max-width: 750px) {
+    padding: 2rem 0 0 0;
+  }
+`
 
 export default () =>
-  <div>
-    <h1>Who we are</h1>
+  <div style={{margin: `-1.5rem 0 0 0`}}>
+    <h1 style={{padding: `0  0 1rem 0`}}>About Me</h1>
+    <Container>
+      <Avatar src={AvatarImage} alt="Photo of me" />
+      <Description>
+        <Name>
+          Felix Volny
+        </Name>
+        <p style={{margin: 0}}>
+          I'm a Web and Mobile Developer. I write code and design User Interfaces. My favorite tools are modern Javascript and Sketch. I'm open to new ideas, but currently my bet is Web Technologies FTW 🚀
+        </p>
+      </Description>
+    </Container>
+    <h2 style={{fontSize: `2rem`}}> Get in Touch</h2>
     <p>
-      We are this amazing company in the middle of nowhere. You'd totally like us if you'd know us personally.
+      To connect with me please click on one of the icons below 👇
     </p>
-    <h2>Meet our Team</h2>
-    <User
-      username="Jane Doe"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-
-    <User
-      username="Bob Smith"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
   </div>
