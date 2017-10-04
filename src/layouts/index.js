@@ -47,10 +47,8 @@ export default ({ children, data }) =>
     maxWidth: 750,
     padding: `2rem 1rem`
   }}>
-    <header style={{
-      marginBottom: `1.5rem`,
-      minHeight: '3rem',
-    }}>
+
+    <header>
       <Link to="/" style={{
         textShadow: `none`,
         backgroundImage: `none`,
@@ -62,6 +60,7 @@ export default ({ children, data }) =>
         <ListLink to="/about/">About</ListLink>
       </Navigation>
     </header>
+
     <div style={{padding: `0 0 ${data.site.siteMetadata.footerHeight}px 0`}}>{children()}</div>
     <Footer height={data.site.siteMetadata.footerHeight} />
   </div>
