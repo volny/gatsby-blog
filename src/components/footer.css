@@ -1,31 +1,38 @@
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-content: space-around;
-
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* left: 0; */
-
+  align-items: center;
   width: 100vw;
   background-color: rgba(150, 150, 150, 0.5);
-  padding: 0 15%;
 }
 
-@media (max-width: 700px) {
-  footer {
-    padding: 0 5%;
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 650px;
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
   }
 }
 
 footer .icon-link {
-  margin: auto;
   background: none;
 }
 
 footer:hover {
   background-color: rgba(150, 150, 150, 0.9);
+}
+
+footer a svg {
+  /* scale the icons */
+  padding: 10px 0;
+  /* padding around icons */
+  margin: 5px 0;
+  vertical-align: middle;
 }
 
 a:hover svg .website-icon path {
@@ -45,5 +52,5 @@ a:hover svg .github-icon path {
 }
 
 a:hover svg .email-icon * {
-  fill: #d35400;
+  fill: #f1c40f;
 }
