@@ -7,7 +7,7 @@ import Logo from './logo.png'
 const HeaderLink = styled(Link)`
   background-Image: none;
   &:hover {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #2980b9 1px, #2980b9 2px, rgba(0, 0, 0, 0) 2px);
   }
 `
 
