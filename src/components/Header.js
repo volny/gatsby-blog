@@ -14,9 +14,7 @@ const HeaderLink = styled(Link)`
 const LogoImage = styled.img`
   display: inline;
   width: 100px;
-  @media (max-width: 750px) {
-    margin: 0 0 0 1rem;
-  }
+  margin: 0;
 `
 
 const Navigation = styled.ul`
