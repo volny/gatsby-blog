@@ -16,7 +16,7 @@ export default ({ data, children }) => {
   const { height, annoying} = data.site.siteMetadata.footer
   return (
     <div>
-    <Container>
+    <Container style={{minHeight: `calc(100vh - ${height}px)`}}>
       <Header />
       <div style={{ padding: `0 0 ${annoying ? height : 0}px 0`}}>
         {children()}
