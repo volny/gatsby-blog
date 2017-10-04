@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from "styled-components"
 
 import '../styling/prism-theme.css'
@@ -12,20 +12,32 @@ const Container = styled.div`
   padding: 2rem 1rem;
 `
 
-export default ({ children, data }) =>
-  <Container>
-    <Header />
-    <div style={{ padding: `0 0 ${data.site.siteMetadata.footerHeight}px 0`}}>
-      {children()}
+export default ({ data, children }) => {
+  const { height, annoying} = data.site.siteMetadata.footer
+  return (
+    <div>
+    <Container>
+      <Header />
+      <div style={{ padding: `0 0 ${annoying ? height : 0}px 0`}}>
+        {children()}
+      </div>
+    </Container>
+    <Footer
+      height={height}
+      annoying={annoying}
+    />
     </div>
-    <Footer height={data.site.siteMetadata.footerHeight} />
-  </Container>
+  )
+}
 
 export const query = graphql`
   query IndexLayoutQuery {
     site {
       siteMetadata {
-        footerHeight
+        footer {
+          height
+          annoying
+        }
       }
     }
   }

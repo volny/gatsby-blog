@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    footerHeight: 80
+    footer: {
+      height: 80,
+      annoying: false,
+    }
   },
   plugins: [
     {
