@@ -39,13 +39,13 @@ const ListLink = ({ to, children }) =>
     </HeaderLink>
   </li>
 
-export default ({data}) => (
+export default () => (
   <header>
     <Link to="/" style={{
       textShadow: `none`,
-        backgroundImage: `none`,
+      backgroundImage: `none`,
     }}>
-    <LogoImage src={Logo} />
+      <LogoImage src={Logo} alt="Logo for Felix Volny" />
     </Link>
     <Navigation>
       <ListLink to="/">Home</ListLink>
@@ -53,13 +53,3 @@ export default ({data}) => (
     </Navigation>
   </header>
 )
-
-export const query = graphql`
-  query HeaderQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

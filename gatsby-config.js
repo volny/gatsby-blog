@@ -1,7 +1,5 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    // need the height globally so I can add padding to layouts
     footerHeight: 80
   },
   plugins: [
