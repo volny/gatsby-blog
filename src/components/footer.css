@@ -30,8 +30,6 @@ footer:hover {
 footer a svg {
   /* scale the icons */
   padding: 10px 0;
-  /* padding around icons */
-  margin: 5px 0;
   vertical-align: middle;
 }
 

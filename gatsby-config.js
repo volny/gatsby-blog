@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     footer: {
-      height: 80,
+      height: 60,
       annoying: false,
     }
   },
