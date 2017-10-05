@@ -9,23 +9,25 @@ import Header from '../components/Header'
 const Container = styled.div`
   margin: 0 auto;
   max-width: 750px;
-  padding: 2rem 1rem;
+  padding: 0 1rem 2rem 1rem;
 `
 
 export default ({ data, children }) => {
   const { height, annoying} = data.site.siteMetadata.footer
   return (
     <div>
-    <Container style={{minHeight: `calc(100vh - ${height}px)`}}>
       <Header />
-      <div style={{ padding: `0 0 ${annoying ? height : 0}px 0`}}>
-        {children()}
-      </div>
-    </Container>
-    <Footer
-      height={height}
-      annoying={annoying}
-    />
+
+      <Container style={{minHeight: `calc(100vh - ${height}px)`}}>
+        <div style={{ padding: `0 0 ${annoying ? height : 0}px 0`}}>
+          {children()}
+        </div>
+      </Container>
+
+      <Footer
+        height={height}
+        annoying={annoying}
+      />
     </div>
   )
 }
