@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="98.5663082" height="98.5663082"></rect>
+    </defs>
+    <g id="render" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-logo-for-gatsby-grey" transform="translate(1.000000, 1.000000)">
+            <g id="Parts" transform="translate(10.842294, 18.924731)">
+                <polygon id="Shape-Part-4" fill="#D3D3D3" points="32.921147 26.6129032 68.0107527 26.6129032 61.4048781 40.8064516 32.921147 40.8064516"></polygon>
+                <polygon id="shape-Part-3" fill="#D3D3D3" points="41.3978495 5.5216835 76.4874552 5.5216835 69.9856479 19.5084045 41.3978495 19.7152319"></polygon>
+                <polygon id="Shape-Part-1" fill="#555555" transform="translate(18.766730, 30.457026) rotate(337.000000) translate(-18.766730, -30.457026) " points="12.1897116 0.573975553 26.2793614 6.55467705 25.3423759 60.3400755 11.2540991 54.3599568"></polygon>
+                <polygon id="Shape-Part-2" fill="#999999" transform="translate(38.921929, 30.460080) rotate(23.000000) translate(-38.921929, -30.460080) " points="31.4114362 6.55779299 45.5000917 0.577513521 46.4324212 54.3624171 32.3438819 60.3426472"></polygon>
+            </g>
+            <g id="Shadows" transform="translate(31.935484, 24.444444)">
+                <polygon id="Shadow-Part-1-(#555555-+10%-=-#3C3C3C)" fill="#3C3C3C" points="6.43487651 27.669041 7.7519598 30.9400177 0.0975706586 49.8777796"></polygon>
+                <polygon id="Shadow-Part-2-(#d3d3d3-+10%-=-#bababa)" fill="#BABABA" points="27.0199306 21.0887835 30.6664886 21.0887835 23.1432765 35.2867384 21.2903226 35.2867384"></polygon>
+                <polygon id="Shadow-Part-3" fill="#BABABA" points="35.5596998 0.00298394097 41.8612689 0.00298394097 34.3332266 14.1935484 29.8261625 14.1935484"></polygon>
+            </g>
+            <g id="Shapeguides" transform="translate(10.842294, 10.250896)"></g>
+        </g>
+    </g>
+</svg>

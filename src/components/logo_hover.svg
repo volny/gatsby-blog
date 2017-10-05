@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="4.03485986%" y1="0%" x2="84.4963641%" y2="72.8132071%" id="linearGradient-1">
+            <stop stop-color="#0D47A1" offset="0%"></stop>
+            <stop stop-color="#2980B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="render" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-logo-for-gatsby-hover" transform="translate(1.000000, 1.000000)">
+            <g id="Parts" transform="translate(10.842294, 24.424731)" fill="url(#linearGradient-1)">
+                <path d="M48.1295071,21.1129032 L68.0107527,21.1129032 L61.4048781,35.3064516 L42.3929497,35.3064516 L36.4959864,49.8968805 L21.1907556,49.8968805 L1.03631487,0.0193788915 L16.3427521,0.0193788915 L28.844584,30.9594487 L41.3478516,0.0233256185 L41.3978495,0.0233256185 L41.3978495,0.0216835049 L76.4874552,0.0216835049 L69.9856479,14.0084045 L50.9452322,14.1461583 L48.1295071,21.1129032 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Shadows" transform="translate(31.935484, 24.444444)" fill="#000000" opacity="0.215013587">
+                <path d="M6.43487651,27.669041 L7.7519598,30.9400177 L0.0975706586,49.8777796 L6.43487651,27.669041 Z M27.0199306,21.0887835 L30.6664886,21.0887835 L23.1432765,35.2867384 L21.2903226,35.2867384 L27.0199306,21.0887835 Z M35.5596998,0.00298394097 L41.8612689,0.00298394097 L34.3332266,14.1935484 L29.8261625,14.1935484 L35.5596998,0.00298394097 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Shapeguides" transform="translate(10.842294, 10.250896)"></g>
+        </g>
+    </g>
+</svg>

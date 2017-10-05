@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from "styled-components"
 
-import Logo from './logo.png'
+import Logo from './logo.svg'
+import LogoHover from './logo_hover.svg'
 
 const HeaderLink = styled(Link)`
   background-Image: none;
@@ -11,10 +12,19 @@ const HeaderLink = styled(Link)`
   }
 `
 
-const LogoImage = styled.img`
-  display: inline;
+// const LogoImage = styled.img`
+//   display: inline;
+//   width: 100px;
+//   margin: 0;
+// `
+
+const LogoDiv = styled.div`
+  background-image: url('${Logo}');
+  height: 100px;
   width: 100px;
-  margin: 0;
+  &:hover {
+    background-image: url('${LogoHover}');
+  }
 `
 
 const Navigation = styled.ul`
@@ -39,11 +49,8 @@ const ListLink = ({ to, children }) =>
 
 export default () => (
   <header>
-    <Link to="/" style={{
-      textShadow: `none`,
-      backgroundImage: `none`,
-    }}>
-      <LogoImage src={Logo} alt="Logo for Felix Volny" />
+    <Link style={{}} to="/">
+      <LogoDiv />
     </Link>
     <Navigation>
       <ListLink to="/">Home</ListLink>
