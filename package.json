@@ -4,13 +4,14 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "rm -rf build/ && gatsby build",
+    "build": "rm -rf public/ && gatsby build",
     "serve": "gatsby serve",
-    "deploy": "rm -rf build/ && gatsby build && netlify deploy"
+    "deploy": "rm -rf public/ && gatsby build && netlify deploy"
   },
   "dependencies": {
     "gatsby": "^1.9.42",
     "gatsby-link": "^1.4.1",
+    "gatsby-plugin-google-analytics": "^1.0.8",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "1.7.10",
     "gatsby-remark-copy-linked-files": "^1.5.7",
