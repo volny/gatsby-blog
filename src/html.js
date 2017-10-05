@@ -1,8 +1,9 @@
-import React from "react"
+import React from 'react'
 
-import Favicon16 from './static/favicon-16x16.png'
-import Favicon32 from './static/favicon-32x32.png'
-import AppleTouchIcon from './static/apple-touch-icon.png'
+import AppleTouchIcon from './static/favicons/apple-touch-icon.png'
+import Favicon16 from './static/favicons/favicon-16x16.png'
+import Favicon32 from './static/favicons/favicon-32x32.png'
+import SafariIcon from './static/favicons/safari-pinned-tab.svg'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -42,7 +43,7 @@ module.exports = class HTML extends React.Component {
           <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} />
           <link rel="icon" type="image/png" sizes="32x32" href={Favicon32} />
           <link rel="icon" type="image/png" sizes="16x16" href={Favicon16} />
-          <meta name="theme-color" content="#2980b9" />
+          <link rel="mask-icon" href={SafariIcon} color="#5bbad5" />
 
           {this.props.headComponents}
           {css}
