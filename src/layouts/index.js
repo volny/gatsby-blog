@@ -5,6 +5,7 @@ import '../styling/prism-theme.css'
 
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import HeadElements from '../components/HeadElements'
 
 const Container = styled.div`
   max-width: 750px;
@@ -23,6 +24,8 @@ export default ({ data, children }) => {
   const { annoying} = data.site.siteMetadata.footer
   return (
     <Wrapper>
+      <HeadElements />
+
       <Header />
 
       <Container style={{flex: 1}}>{children()}</Container>

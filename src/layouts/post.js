@@ -14,13 +14,22 @@ const PostDate = styled.p`
   margin-bottom: 0;
 `
 
+// overriding global components/HeadElements.js
+const PostHeadElements = ({post}) => (
+  <Helmet>
+    <title>{post.frontmatter.title} - Felix Volny Blog</title>
+
+    <meta name="description" content={post.frontmatter.excerpt} />
+    <meta name="title" content={post.frontmatter.title} />
+
+  </Helmet>
+)
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <div>
-      <Helmet>
-        <title>{data.markdownRemark.frontmatter.title} - Felix Volny Blog</title>
-      </Helmet>
+      <PostHeadElements post={post} />
       <div style={{padding: `8px 0 25px 0`}}>
         <PostDate>{post.frontmatter.date}</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
@@ -37,6 +46,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        excerpt
       }
     }
   }
