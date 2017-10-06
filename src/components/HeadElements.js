@@ -1,10 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import AppleTouchIcon from '../static/favicons/apple-touch-icon.png'
-import Favicon16 from '../static/favicons/favicon-16x16.png'
-import Favicon32 from '../static/favicons/favicon-32x32.png'
-import SafariIcon from '../static/favicons/safari-pinned-tab.svg'
+import AppleTouchIcon from '../../static/apple-touch-icon.png'
+import Favicon16 from '../../static/favicon-16x16.png'
+import Favicon32 from '../../static/favicon-32x32.png'
+import SafariIcon from '../../static/safari-pinned-tab.svg'
 
 export default () => (
   <Helmet>
