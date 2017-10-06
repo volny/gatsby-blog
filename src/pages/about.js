@@ -16,6 +16,7 @@ const Avatar = styled.img`
   width: 250px;
   height: 250px;
   margin: 0;
+  border-radius: 2px;
   @media (max-width: 750px) {
     align-self: flex-start;
   }
