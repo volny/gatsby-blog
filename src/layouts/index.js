@@ -7,28 +7,27 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 0 1rem 2rem 1rem;
+  max-width: 700px;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export default ({ data, children }) => {
-  const { height, annoying} = data.site.siteMetadata.footer
+  const { annoying} = data.site.siteMetadata.footer
   return (
-    <div>
+    <Wrapper>
       <Header />
 
-      <Container style={{minHeight: `calc(100vh - ${height}px)`}}>
-        <div style={{ padding: `0 0 ${annoying ? height : 0}px 0`}}>
-          {children()}
-        </div>
-      </Container>
+      <Container style={{}}>{children()}</Container>
 
-      <Footer
-        height={height}
-        annoying={annoying}
-      />
-    </div>
+      <Footer annoying={annoying} style={{}}/>
+    </Wrapper>
   )
 }
 
@@ -37,7 +36,6 @@ export const query = graphql`
     site {
       siteMetadata {
         footer {
-          height
           annoying
         }
       }

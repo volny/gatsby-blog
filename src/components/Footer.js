@@ -5,12 +5,11 @@ import './footer.css'
 
 export default class Footer extends Component {
   render() {
-    const { height, annoying } = this.props
-    const _height = {height: `${height}px`}
-    const _styles = {...height, position: 'fixed', bottom: 0, left: 0,}
+    const { annoying } = this.props
+    const _annoying = {position: 'fixed', bottom: 0, left: 0,}
 
     return (
-      <footer style={annoying ? _styles : _height}>
+      <footer style={annoying ? _annoying : {}}>
       <div className="icon-container">
         <a className="icon-link" href="https:www.example.com" target="_blank">
           <WebsiteIcon />
