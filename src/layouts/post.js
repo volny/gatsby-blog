@@ -17,15 +17,23 @@ const PostDate = styled.p`
 // overriding global components/HeadElements.js
 const PostHeadElements = ({post}) => (
   <Helmet>
-    <title>{post.frontmatter.title} - Felix Volny Blog</title>
+    <title>{post.frontmatter.title}</title>
 
-    <meta name="description" content={post.frontmatter.excerpt} />
+    {/* Google  */}
     <meta name="title" content={post.frontmatter.title} />
+    <meta name="description" content={post.frontmatter.excerpt} />
     <link rel="canonical" href={`https://www.felixvolny.com${post.fields.slug}`} />
 
+    {/* Open Graph */}
     <meta property="og:title" content={post.frontmatter.title} />
     <meta property="og:description" content={post.frontmatter.excerpt} />
     <meta property="og:url" content={`https://www.felixvolny.com${post.fields.slug}`} />
+
+
+    {/* Twitter Cards */}
+    <meta name="twitter:title" content={post.frontmatter.title} />
+    <meta name="twitter:description" content={post.frontmatter.excerpt} />
+    <meta name="twitter:url" content={`https://www.felixvolny.com${post.fields.slug}`} />
   </Helmet>
 )
 
