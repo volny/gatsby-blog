@@ -16,11 +16,21 @@ export default () => (
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <link rel="canonical" href="https://www.felixvolny.com/" />
+
     <meta name="description" content="Web and Mobile Application Development Blog by Felix Volny" />
     <meta name="robots" content="all" />
     <meta name="author" content="Felix Volny" />
-    <link rel="canonical" href="https://www.felixvolny.com/" />
 
+    {/* Open Graph */}
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="felixvolny.com" />
+    <meta property="og:description" content="Web and Mobile Application Development Blog by Felix Volny" />
+    <meta property="og:url" content="https://www.felixvolny.com/" />
+    <meta property="og:site_name" content="felixvolny.com" />
+
+    {/* Favions */}
     <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} />
     <link rel="icon" type="image/png" sizes="32x32" href={Favicon32} />
     <link rel="icon" type="image/png" sizes="16x16" href={Favicon16} />

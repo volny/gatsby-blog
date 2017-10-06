@@ -23,6 +23,9 @@ const PostHeadElements = ({post}) => (
     <meta name="title" content={post.frontmatter.title} />
     <link rel="canonical" href={`https://www.felixvolny.com${post.fields.slug}`} />
 
+    <meta property="og:title" content={post.frontmatter.title} />
+    <meta property="og:description" content={post.frontmatter.excerpt} />
+    <meta property="og:url" content={`https://www.felixvolny.com${post.fields.slug}`} />
   </Helmet>
 )
 
