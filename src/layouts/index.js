@@ -10,14 +10,19 @@ import HeadElements from '../components/HeadElements'
 const Container = styled.div`
   max-width: 750px;
   padding: 0 1rem 2rem 1rem;
+  flex: 1;
+  /* weird hack because margin auto and align-items produce overflow issues */
+  @media (min-width: 750px) {
+    margin: 0 auto;
+  }
+
 `
 
 const Wrapper = styled.div`
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
-  align-items: center;
 `
 
 export default ({ data, children }) => {
@@ -28,7 +33,7 @@ export default ({ data, children }) => {
 
       <Header />
 
-      <Container style={{flex: 1}}>{children()}</Container>
+      <Container>{children()}</Container>
 
       <Footer annoying={annoying} style={{}}/>
     </Wrapper>
