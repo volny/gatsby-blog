@@ -28,6 +28,7 @@ module.exports = class HTML extends React.Component {
     return (
       <html>
         <head>
+          <title>Felix Volny Blog</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta

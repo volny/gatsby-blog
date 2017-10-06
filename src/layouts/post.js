@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from "styled-components"
+import { Helmet } from 'react-helmet'
+import styled from 'styled-components'
 
 const PostTitle = styled.h1`
   font-size: 2em;
@@ -17,6 +18,9 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <div>
+      <Helmet>
+        <title>{data.markdownRemark.frontmatter.title} - Felix Volny Blog</title>
+      </Helmet>
       <div style={{padding: `8px 0 25px 0`}}>
         <PostDate>{post.frontmatter.date}</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
