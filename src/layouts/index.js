@@ -7,7 +7,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const Container = styled.div`
-  max-width: 700px;
+  max-width: 750px;
+  padding: 0 1rem 2rem 1rem;
 `
 
 const Wrapper = styled.div`
@@ -24,7 +25,7 @@ export default ({ data, children }) => {
     <Wrapper>
       <Header />
 
-      <Container style={{}}>{children()}</Container>
+      <Container style={{flex: 1}}>{children()}</Container>
 
       <Footer annoying={annoying} style={{}}/>
     </Wrapper>
