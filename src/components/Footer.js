@@ -11,19 +11,19 @@ export default class Footer extends Component {
     return (
       <footer style={annoying ? _annoying : {}}>
       <div className="icon-container">
-        <a className="icon-link" href="https:www.example.com" target="_blank">
+        <a className="icon-link" href="https:www.volny.co" target="_blank">
           <WebsiteIcon />
         </a>
-        <a className="icon-link" href="https://twitter.com" target="_blank">
+        <a className="icon-link" href="https://twitter.com/volnyco" target="_blank">
           <TwitterIcon />
         </a>
-        <a className="icon-link" href="https://www.linkedin.com" target="_blank">
+        <a className="icon-link" href="www.linkedin.com/in/felix-volny" target="_blank">
           <LinkedinIcon />
         </a>
-        <a className="icon-link" href="https://github.com" target="_blank">
+        <a className="icon-link" href="https://github.com/volny" target="_blank">
           <GithubIcon />
         </a>
-        <a className="icon-link" href="https://github.com" target="_blank">
+        <a className="icon-link" href="mailto:website@felixvolny.com" target="_blank">
           <EmailIcon />
         </a>
       </div>
