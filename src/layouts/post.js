@@ -21,6 +21,7 @@ const PostHeadElements = ({post}) => (
 
     <meta name="description" content={post.frontmatter.excerpt} />
     <meta name="title" content={post.frontmatter.title} />
+    <link rel="canonical" href={`https://www.felixvolny.com${post.fields.slug}`} />
 
   </Helmet>
 )
@@ -39,15 +40,19 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql`
-  query PostLayoutQuery($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        excerpt
-      }
+export const query = graphql
+`
+query PostLayoutQuery($slug: String) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    html
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      date(formatString: "MMMM DD, YYYY")
+      excerpt
     }
   }
+}
 `
