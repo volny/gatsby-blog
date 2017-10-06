@@ -1,10 +1,14 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://felixvolny.com`,
     footer: {
       annoying: false,
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
