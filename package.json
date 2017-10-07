@@ -6,7 +6,8 @@
     "develop": "gatsby develop",
     "build": "rm -rf public/ && gatsby build",
     "serve": "gatsby serve",
-    "deploy": "rm -rf public/ && gatsby build && netlify deploy"
+    "deploy:local": "rm -rf public/ && gatsby build && netlify deploy",
+    "deploy:production": "git push origin production "
   },
   "dependencies": {
     "gatsby": "^1.9.42",
