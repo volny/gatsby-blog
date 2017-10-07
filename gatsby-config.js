@@ -6,6 +6,29 @@ module.exports = {
     }
   },
   plugins: [
+  {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Web and Mobile Application Development Blog by Felix Volny",
+        short_name: "Felix Volny",
+        start_url: "/",
+        background_color: "#d8d8d8",
+        theme_color: "#2980b9",
+        display: "minimal-ui",
+        icons: [
+          {
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-sitemap`
     },
