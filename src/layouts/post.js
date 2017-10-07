@@ -29,14 +29,9 @@ const PostHeadElements = ({post}) => (
     <meta property="og:description" content={post.frontmatter.excerpt} />
     <meta property="og:url" content={`https://www.felixvolny.com${post.fields.slug}`} />
 
-
     {/* Twitter Cards */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@volnyco" />
-    <meta name="twitter:creator" content="@volnyco" />
     <meta name="twitter:title" content={post.frontmatter.title} />
     <meta name="twitter:description" content={post.frontmatter.excerpt} />
-    <meta name="twitter:image" content="https://felixvolny.com/twitter_card.png" />
   </Helmet>
 )
 

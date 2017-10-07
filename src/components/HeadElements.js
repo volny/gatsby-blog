@@ -24,12 +24,12 @@ export default () => (
     <meta name="author" content="Felix Volny" />
 
     {/* Open Graph */}
-    <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Development Blog by Felix Volny" />
     <meta property="og:description" content="Web and Mobile Application Development Blog by Felix Volny" />
+    <meta property="og:image" content="https://www.felixvolny.com/open_graph.png" />
     <meta property="og:url" content="https://www.felixvolny.com/" />
-    <meta property="og:site_name" content="felixvolny.com" />
+    <meta property="og:site_name" content="Development Blog by Felix Volny" />
 
     {/* Twitter Cards */}
     <meta name="twitter:card" content="summary_large_image" />
