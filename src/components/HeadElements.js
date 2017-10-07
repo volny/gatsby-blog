@@ -32,10 +32,12 @@ export default () => (
     <meta property="og:site_name" content="felixvolny.com" />
 
     {/* Twitter Cards */}
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@volnyco" />
+    <meta name="twitter:creator" content="@volnyco" />
     <meta name="twitter:title" content="Development Blog by Felix Volny" />
     <meta name="twitter:description" content="Web and Mobile Application Development Blog by Felix Volny" />
-    <meta name="twitter:url" content="https://www.felixvolny.com/" />
+    <meta name="twitter:image" content="https://felixvolny.com/twitter_card.png" />
 
     {/* Favions */}
     <link rel="apple-touch-icon" sizes="180x180" href={AppleTouchIcon} />
