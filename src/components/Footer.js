@@ -11,7 +11,7 @@ export default class Footer extends Component {
     return (
       <footer style={annoying ? _annoying : {}}>
       <div className="icon-container">
-        <a className="icon-link" href="https:www.volny.co" target="_blank">
+        <a className="icon-link" href="https://www.volny.co" target="_blank">
           <WebsiteIcon />
         </a>
         <a className="icon-link" href="https://twitter.com/volnyco" target="_blank">
