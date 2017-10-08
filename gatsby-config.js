@@ -30,7 +30,7 @@ module.exports = {
       },
     },
     // Offline Plugin wants to read manifest.json, so it needs to come after gatsby-plugin-manifest
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-sitemap`
     },
