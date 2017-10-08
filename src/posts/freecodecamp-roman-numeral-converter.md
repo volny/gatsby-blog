@@ -10,7 +10,7 @@ tags:
 This could be messy. [freeCodeCamp asks us](https://www.freecodecamp.org/challenges/roman-numeral-converter) to write a converter for roman numerals.
 
 The roman numeral system has this unique rule that it doesn't allow more than 3 repeating digits - instead you move it behind the last one, where it will be subtracted, not added.  
-So 9 is `IX`, not `VIII`, 44 is `XLIV`, not `XXXXIIII`, as you'd naively think.  **If you attempt to implement this rule in your code it gets complex quickly.**
+So 9 is `IX`, not `VIIII`, and 44 is `XLIV`, not `XXXXIIII`, as you'd naively think.  **If you attempt to implement this rule in your code it gets complex quickly.**
 
 Instead let's make our lives easy and write a Map. We'll include those special cases in our Map - so you'll find `IV`, `IX` etc treated as separate roman numerals.
 
