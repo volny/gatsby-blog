@@ -1,7 +1,7 @@
 ---
 title: OMG moving images
 date: "2017-11-29"
-excerpt: |
+summary: |
   Note: this command will expose the top two directory levels off your root. This includes traversing one level into your Volumes, and will list the summary sizes of each top-level directory in each of your attached volumes. Depending on what you have attached, this command could take some time to complete.
 ---
 

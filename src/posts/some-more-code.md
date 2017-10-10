@@ -1,7 +1,7 @@
 ---
 title: Some more code
 date: "2017-09-29"
-excerpt: |
+summary: |
   I have seen an example online that use language-jsx nicely. I have also found this PR #479. However, I don't have any coloration for my jsx. Is jsx supposed to work out of the box? On the list on the site there is also json, but json work only with js.
 
 ---

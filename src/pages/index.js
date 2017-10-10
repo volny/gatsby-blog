@@ -27,7 +27,7 @@ export default ({ data }) => {
           </Link>
           <p>
             <Link style={{color: 'hsla(0,0%,0%,0.8)', backgroundImage: 'none'}} to={node.fields.slug}>
-              {node.frontmatter.excerpt}
+              {node.frontmatter.summary}
             </Link>
           </p>
           <hr style={{
@@ -49,7 +49,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            excerpt
+            summary
           }
           fields {
             slug

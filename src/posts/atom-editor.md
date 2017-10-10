@@ -1,7 +1,7 @@
 ---
 title: "Atom - the hackable text editor"
 date: "2017-09-10"
-excerpt: |
+summary: |
   Atom is a hackable text editor for the 21st century, built on [Electron](https://github.com/atom/electron), and based on everything we love about our favorite editors. We designed it to be deeply customizable, but still approachable using the default configuration.
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Super short post"
 date: "2018-12-10"
-excerpt: |
+summary: |
   Atom is a hackable text editor for the 21st century, built on [Electron](https://github.com/atom/electron).
 ---
 

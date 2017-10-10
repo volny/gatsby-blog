@@ -1,7 +1,7 @@
 ---
 title: Some code
 date: "2017-08-21"
-excerpt: |
+summary: |
   This is some beautiful code:
   You can also add line highlighting. It adds a span around lines of code with a special class `.gatsby-highlight-code-line` that you can target with styles. See this readme for more info.
 ---

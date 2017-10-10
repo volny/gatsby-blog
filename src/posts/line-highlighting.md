@@ -1,7 +1,7 @@
 ---
 title: "I wanna cry - it's line highlighting"
 date: "2018-09-10"
-excerpt: |
+summary: |
   Hot reload is really great, hugely useful when iterating on your site structure, style, or post contents. Be aware, however, that you will need to restart
 ---
 
