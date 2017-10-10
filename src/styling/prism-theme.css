@@ -28,6 +28,21 @@ cyan      #2aa198
 green     #859900
 */
 
+
+/* Inline code */
+:not(pre) > code {
+  font-size: 70%;
+  background: #f3f3f3;
+  border-radius: 3px;
+  padding: 0.2rem 0.3rem;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: #586e75;
+	line-height: 1;
+  /* TODO: move the box up a bit to line-base */
+  /* TODO: make the font look nicer, like the other block snippets */
+}
+
+
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #657b83; /* base00 */
@@ -71,12 +86,6 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background-color: #f3f3f3; /* base3 */
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .1em;
 }
 
 .token.comment,
