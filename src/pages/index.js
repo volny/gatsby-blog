@@ -21,11 +21,15 @@ export default ({ data }) => {
         <div key={node.id} style={{padding: '8px 0'}}>
           <Link to={node.fields.slug}>
             <PostDate>{node.frontmatter.date}</PostDate>
-            <PostTitle>{node.frontmatter.title}</PostTitle>
-            <p style={{color: 'hsla(0,0%,0%,0.8)'}}>
-              {node.frontmatter.excerpt}
-            </p>
           </Link>
+          <Link to={node.fields.slug}>
+            <PostTitle>{node.frontmatter.title}</PostTitle>
+          </Link>
+          <p>
+            <Link style={{color: 'hsla(0,0%,0%,0.8)', backgroundImage: 'none'}} to={node.fields.slug}>
+              {node.frontmatter.excerpt}
+            </Link>
+          </p>
           <hr style={{
           margin: '-5px 80% 20px 5px',
           height: '5px',
