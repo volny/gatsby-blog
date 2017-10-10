@@ -1,7 +1,7 @@
 ---
 title: "freeCodeCamp using Modern JavaScript #2 - Diff Two Arrays"
 date: "2017-10-08"
-excerpt: "For this freeCodeCamp challenge we'll write a function to compute the symmetric difference between two arrays."
+summary: "For this freeCodeCamp challenge we'll write a function to compute the symmetric difference between two arrays."
 tags:
   - "freeCodeCamp"
   - "JavaScript"

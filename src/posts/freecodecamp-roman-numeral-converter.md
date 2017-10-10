@@ -1,7 +1,7 @@
 ---
 title: "freeCodeCamp using Modern JavaScript #3 - Roman Numeral Converter"
 date: "2017-10-09"
-excerpt: "This could be messy. freeCodeCamp asks us to write a converter for roman numerals. Let's use modern JavaScript to solve the problem elegantly."
+summary: "This could be messy. freeCodeCamp asks us to write a converter for roman numerals. Let's use modern JavaScript to solve the problem elegantly."
 tags:
   - "freeCodeCamp"
   - "JavaScript"

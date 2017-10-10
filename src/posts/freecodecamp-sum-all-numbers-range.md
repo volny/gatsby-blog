@@ -1,7 +1,7 @@
 ---
 title: "freeCodeCamp using Modern JavaScript #1 - Sum All Numbers in a Range"
 date: "2017-10-07"
-excerpt: "The first intermediate challenge is a bit of a warmup question - we'll write a function that take an array of exactly 2 numbers, and returns the sum of those 2 numbers and all numbers in between."
+summary: "The first intermediate challenge is a bit of a warmup question - we'll write a function that take an array of exactly 2 numbers, and returns the sum of those 2 numbers and all numbers in between."
 tags:
   - "freeCodeCamp"
   - "JavaScript"
