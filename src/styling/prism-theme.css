@@ -31,15 +31,13 @@ green     #859900
 
 /* Inline code */
 :not(pre) > code {
-  font-size: 70%;
+  font-size: 110%;
   background: #f3f3f3;
   border-radius: 3px;
   padding: 0.2rem 0.3rem;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: monospace;
   color: #586e75;
 	line-height: 1;
-  /* TODO: move the box up a bit to line-base */
-  /* TODO: make the font look nicer, like the other block snippets */
 }
 
 
