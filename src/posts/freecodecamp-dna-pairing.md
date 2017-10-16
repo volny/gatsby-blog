@@ -7,7 +7,7 @@ tags:
   - "JavaScript"
 ---
 
-This one is actually fairly easy, so this will be a short post. We'll do some basic array manipulation and make a `Map` for the DNA base pairs. This creates a mapping of each of the 4 letters to it's partner. To see another example of `Map` in action take a look at the [Roman Numeral Converter](https://www.felixvolny.com/posts/freecodecamp-roman-numeral-converter/).
+This one is actually fairly easy, so this will be a short post. We'll make a `Map` for the DNA base pairs and do some basic array manipulation. To see another example of `Map` in action take a look at the [Roman Numeral Converter](https://www.felixvolny.com/posts/freecodecamp-roman-numeral-converter/).
 
 ```javascript
 const map = new Map([['A', 'T'], ['T', 'A'], ['C', 'G'], ['G', 'C'] ]);
