@@ -1,12 +1,9 @@
-// @flow
 import gray from 'gray-percentage'
-import type { OptionsType } from 'Types'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
-
 import 'typeface-work-sans'
 
-const theme: OptionsType = {
+export default {
   title: 'Fairy Gates',
   baseFontSize: '20px',
   baseLineHeight: 1.45,
@@ -74,5 +71,3 @@ const theme: OptionsType = {
     }
   },
 }
-
-export default theme
