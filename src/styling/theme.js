@@ -4,22 +4,13 @@ import type { OptionsType } from 'Types'
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants'
 import verticalRhythm from 'compass-vertical-rhythm'
 
+import 'typeface-work-sans'
+
 const theme: OptionsType = {
   title: 'Fairy Gates',
   baseFontSize: '20px',
   baseLineHeight: 1.45,
-  googleFonts: [
-    {
-      name: 'Work Sans',
-      styles: ['600'],
-    },
-    // {
-    //   name: 'Quattrocento Sans',
-    //   styles: ['400', '400i', '700'],
-    // },
-  ],
-  headerFontFamily: ['Work Sans', 'sans-serif'],
-  // bodyFontFamily: ['Quattrocento Sans', 'serif'],
+  headerFontFamily: ['Work Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'sans-serif'],
   bodyFontFamily: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'sans-serif'],
   headerColor: 'hsla(0,0%,0%,0.9)',
   bodyColor: 'hsla(0,0%,0%,0.8)',
