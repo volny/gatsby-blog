@@ -9239,9 +9239,20 @@ typeface-work-sans@^0.0.40:
   version "0.0.40"
   resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.40.tgz#b7381165bb39c958ea7a56c018b60eff57dd5216"
 
+typography-breakpoint-constants@^0.15.10:
+  version "0.15.10"
+  resolved "https://registry.yarnpkg.com/typography-breakpoint-constants/-/typography-breakpoint-constants-0.15.10.tgz#bd5308dd57250e7f28a8c6e1c0e668ddf1178c5c"
+
 typography-normalize@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"
+
+typography-theme-fairy-gates@^0.15.11:
+  version "0.15.11"
+  resolved "https://registry.yarnpkg.com/typography-theme-fairy-gates/-/typography-theme-fairy-gates-0.15.11.tgz#305ec02548e4065ab6ba9c7b47ff5099b6f9be5c"
+  dependencies:
+    gray-percentage "^2.0.0"
+    typography-breakpoint-constants "^0.15.10"
 
 typography@^0.16.0:
   version "0.16.6"

@@ -24,6 +24,7 @@
     "gatsby-remark-prismjs": "^1.2.8",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
-    "typeface-work-sans": "^0.0.40"
+    "typeface-work-sans": "^0.0.40",
+    "typography-theme-fairy-gates": "^0.15.11"
   }
 }
