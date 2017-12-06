@@ -15,13 +15,15 @@ const PostDate = styled.p`
 `
 
 export default ({ data }) => {
+  const { showDates } = data.site.siteMetadata
   return (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) =>
         <div key={node.id} style={{padding: '8px 0'}}>
+          {showDates &&
           <Link to={node.fields.slug}>
             <PostDate>{node.frontmatter.date}</PostDate>
-          </Link>
+          </Link>}
           <Link to={node.fields.slug}>
             <PostTitle>{node.frontmatter.title}</PostTitle>
           </Link>
@@ -42,6 +44,11 @@ export default ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
+    site {
+      siteMetadata {
+        showDates
+      }
+    }
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {

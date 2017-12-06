@@ -3,7 +3,8 @@ module.exports = {
     siteUrl: `https://felixvolny.com`,
     footer: {
       annoying: false,
-    }
+    },
+    showDates: false,
   },
   plugins: [
     {

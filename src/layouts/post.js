@@ -37,11 +37,12 @@ const PostHeadElements = ({post}) => (
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const { showDates } = data.site.siteMetadata
   return (
     <div>
       <PostHeadElements post={post} />
       <div style={{padding: `8px 0 25px 0`}}>
-        <PostDate>{post.frontmatter.date}</PostDate>
+        {showDates && <PostDate>{post.frontmatter.date}</PostDate>}
         <PostTitle>{post.frontmatter.title}</PostTitle>
       </div>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -49,19 +50,23 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql
-`
-query PostLayoutQuery($slug: String) {
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    fields {
-      slug
+export const query = graphql `
+  query PostLayoutQuery($slug: String) {
+    site {
+      siteMetadata {
+        showDates
+      }
     }
-    frontmatter {
-      title
-      date(formatString: "MMMM DD, YYYY")
-      summary
+    markdownRemark(fields: {slug: {eq: $slug}}) {
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        summary
+      }
     }
   }
-}
 `
