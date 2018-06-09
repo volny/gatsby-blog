@@ -30,11 +30,13 @@ export default () => (
     <Avatar src={AvatarImage} alt="Photo of me" />
     <Name>Felix Volny</Name>
     <Description>
-      I’m a Frontend Engineer working mostly with React. I love to write code and design User Interfaces.
-      Currently interested in real-time data visualization and blockchain technology.
-    </Description>
-    <a href="https://www.volny.co/#contactForm" target="_blank">
-      You can reach me here
+      I’m a Frontend & UI Engineer currently living and working in Bangkok.<br/>
+      I made this blog to try out <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and play with features like Service Workers and Server-Side Rendering. I never got around to actually blogging much, though that might change soon.
+    </Description><br/>
+    <a href="mailto:website@felixvolny.co" target="_blank">
+      Contact me
     </a>.
+
+
   </Container>
 )
