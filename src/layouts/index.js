@@ -30,12 +30,9 @@ export default ({ data, children }) => {
   return (
     <Wrapper>
       <HeadElements />
-
       <Header />
-
       <Container>{children()}</Container>
-
-      <Footer annoying={annoying} style={{}}/>
+      {/* <Footer annoying={annoying} style={{}}/> */}
     </Wrapper>
   )
 }
