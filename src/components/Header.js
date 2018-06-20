@@ -8,7 +8,6 @@ import LogoHover from './logo_hover.svg'
 const Header = styled.header`
   display: flex;
   justify-content: center;
-  width: 100vw;
 `
 
 const HeaderContainer = styled.div`
